@@ -12,6 +12,11 @@ body {
     max-height: fit-content;
 }
 
+a { 
+    text-decoration: none;
+    color: inherit;   
+}
+
 .fin-btn{
     position: fixed;
     bottom: 5vh;
@@ -23,7 +28,8 @@ body {
     width: 98%;
     margin-left: 1%;
     margin-right: 1%;
-    justify-content: right;
+    justify-content: flex-end;
+    
 }
 
 .center {
@@ -39,11 +45,14 @@ body {
 }
 
 .pg-btn {
-    padding: 1%;
+
+    padding: 0.5em;
     margin-top: auto;
     margin-bottom: auto;
     border: 1px solid darkcyan;
     background-color: aquamarine;
+    white-space: pre;
+    width: max-content;    
 
 }
 

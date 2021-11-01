@@ -1,6 +1,6 @@
 import React from "react";
-import ChooseIngredients from'./ChooseIngredients';
-import Burger from "./Burger";
+import ChooseIngredients from'../ChooseIngredients';
+import Burger from "../Burger";
 
 const ingSect = [
     {

@@ -15,7 +15,7 @@ class ChooseIngredients extends React.Component{
   
         <div className={'cho-ing'}>
           <h2>Choose your ingredients!</h2>
-          {sections};
+          {sections}
         </div>
       
       );

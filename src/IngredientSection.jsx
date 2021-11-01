@@ -6,7 +6,7 @@ class IngredientSection extends React.Component{
       const buttons = [];
       console.log(this.props)
       this.props.value.forEach(ingredient => {
-        buttons.push(<button className={'pg-btn ingredients'} type="button">{ingredient.name + " (" + ingredient.price + "tl)"}</button>)
+        buttons.push(<button key={ingredient.name} className={'pg-btn ingredients'} type="button">{ingredient.name + " (" + ingredient.price + "tl)"}</button>);
       })
   
       return(
