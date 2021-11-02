@@ -1,25 +1,23 @@
 import React from "react";
 import IngredientSection from "./IngredientSection";
 
-class ChooseIngredients extends React.Component{
+function ChooseIngredients (props){
 
-    render(){
+  const sections = [];
   
-      const sections = [];
-      
-      this.props.ingSect.forEach(section =>{
-        sections.push(<IngredientSection key={section.name} name={section.name} value={section.value} />)
-      })
+  props.ingSect.forEach(section =>{
+    sections.push(<IngredientSection key={section.name} name={section.name} value={section.value} />)
+  })
+
+  return(
+
+    <div className={'cho-ing'}>
+      <h2>Choose your ingredients!</h2>
+      {sections}
+    </div>
   
-      return(
-  
-        <div className={'cho-ing'}>
-          <h2>Choose your ingredients!</h2>
-          {sections}
-        </div>
-      
-      );
-    }
+  );
+
 }
 
 export default ChooseIngredients;

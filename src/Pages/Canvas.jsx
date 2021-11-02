@@ -40,18 +40,17 @@ const ingSect = [
     }
   ]
 
-class Canvas extends React.Component{
-    render(){
+function Canvas(props) {
   
-      const headerClasses = this.props.classes;
-  
-      return(
-        <div className={headerClasses.length===1?headerClasses:headerClasses.join(' ')}>
-          <ChooseIngredients ingSect={ingSect}/>
-          <Burger />          
-        </div>
-      );
-    }
+    const headerClasses = props.classes;
+
+    return(
+      <div className={headerClasses.length===1?headerClasses:headerClasses.join(' ')}>
+        <ChooseIngredients ingSect={ingSect}/>
+        <Burger />          
+      </div>
+    );
+    
 }
 
 export default Canvas;
